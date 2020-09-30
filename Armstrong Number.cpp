@@ -13,36 +13,36 @@ Armstrong Numbers : 1,153,370,371,407,8208,9474
 int Armstrongcheck(int);
 int main()
 {
- int num;
+ int no;
 // cout<<"Enter a Number:";
- cin>>num;
-// for(num=1;num<=1000;num++)
-  if(Armstrongcheck(num) == 1)
-   cout<<num<<" is Armstrong Number."<<endl;
+ cin>>no;
+// for(no=1;no<=1000;no++)
+  if(Armstrongcheck(no) == 1)
+   cout<<no<<" is Armstrong Number."<<endl;
  else
-   cout<<num<<" is Not Armstrong Number."<<endl;
+   cout<<no<<" is Not Armstrong Number."<<endl;
 return 0;
 }
-int Armstrongcheck(int num)
+int Armstrongcheck(int no)
 {
  int n,sum,rem,digit=0;
  float p;
- n=num;
+ n=no; // 153
  while(n!=0)
  {
   digit++;
-  n=n/10;
+  n=n/10; 
  }
- n=num;
+ n=no; //153
  sum=0;
  while(n!=0)
  {
-   rem=n%10;
+   rem=n%10; //3
    p=pow(rem,digit);
    sum+=p;
-   n=n/10;
+   n=n/10; //15
  }
- if(sum==num)
+ if(sum==no)
    return 1;
  else
    return 0;
