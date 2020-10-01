@@ -13,7 +13,7 @@ For example:
 12 * 2 = 24
 
 -> Sum of Factor of 12 is Greater than Twice of 12.
-
+//comments
 
 */
 #include <iostream>
