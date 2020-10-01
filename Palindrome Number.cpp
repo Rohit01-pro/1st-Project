@@ -13,16 +13,16 @@ int main()
  int num,n,r,rev=0;
 // cout<<"Enter a Number: ";
   cin>>num;
-  n=num;
- cout<<"Your Number: "<<num<<endl;
+  n=num; //656
+ cout<<"Your Number: "<<num<<endl; //656
  while(n!=0)
  {
-  r=n%10;
-  rev=rev*10+r;
-  n=n/10;
+  r=n%10; //6
+  rev=rev*10+r; //6 5 6
+  n=n/10; //65
  }
- if(num==rev)
-  cout<<"It is a PALINDROME Number.";
+ if(num==rev) //656==656
+  cout<<"It is a PALINDROME Number."; //656
  else
   cout<<"It is Not a PALINDROME Number.";
  return 0;
